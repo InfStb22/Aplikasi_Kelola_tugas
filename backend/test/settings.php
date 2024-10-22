@@ -1,5 +1,5 @@
 <?php
-$pageAccess = "users"; 
+$key = "pytzch";
 require '../db/connect.php'; 
 require '../controllers/AuthController.php';
 require '../controllers/SessionController.php'; 
@@ -7,7 +7,7 @@ require '../controllers/SessionController.php';
 use Backend\Controllers\AuthController;
 use Backend\Controllers\SessionController;
 
-SessionController::checkAccess($pageAccess);
+SessionController::checkAccess("users");
 ?>
 
 <!DOCTYPE html>

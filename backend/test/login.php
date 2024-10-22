@@ -1,5 +1,5 @@
 <?php
-$pageAccess = "non-login"; 
+$key = "pytzch";
 require '../db/connect.php'; 
 require '../controllers/AuthController.php';
 require '../controllers/SessionController.php'; 
@@ -8,7 +8,7 @@ use Backend\Controllers\AuthController;
 use Backend\Controllers\SessionController;
 
 
-SessionController::checkAccess($pageAccess);
+SessionController::checkAccess("non-login");
 
 $authController = new AuthController($conn);
 $authController->login();

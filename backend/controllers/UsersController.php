@@ -3,8 +3,9 @@
 namespace Backend\Controllers;
 
 require_once __DIR__ . '/../models/User.php'; 
-
 use Backend\Models\User;
+
+if (empty($key) || $key !== "pytzch") { header('Location: /login'); exit; }
 
 class UsersController
 {

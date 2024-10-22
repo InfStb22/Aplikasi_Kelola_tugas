@@ -1,4 +1,5 @@
 <?php
+    $key = "pytzch";
     require '../db/connect.php'; 
     require '../controllers/SessionController.php'; 
     require '../controllers/TugasController.php'; 

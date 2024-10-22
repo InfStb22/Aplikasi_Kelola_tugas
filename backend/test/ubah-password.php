@@ -1,5 +1,5 @@
 <?php
-$pageAccess = "users"; // Sesuaikan dengan akses halaman (non-login atau users)
+$key = "pytzch"; 
 require '../db/connect.php'; 
 require '../controllers/UsersController.php';
 require '../controllers/SessionController.php'; 
@@ -7,13 +7,10 @@ require '../controllers/SessionController.php';
 use Backend\Controllers\UsersController;
 use Backend\Controllers\SessionController;
 
-// Panggil SessionController untuk mengecek akses
-SessionController::checkAccess($pageAccess);
 
-// Instansiasi UsersController
+SessionController::checkAccess("users");
+
 $usersController = new UsersController($conn);
-
-// Panggil metode gantiUserPassword
 $usersController->gantiUserPassword();
 ?>
 

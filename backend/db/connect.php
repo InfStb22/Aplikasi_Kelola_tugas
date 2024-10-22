@@ -1,5 +1,7 @@
 <?php
 
+if (empty($key) || $key !== "pytzch") { header('Location: /login'); exit; }
+
 $host = getenv('DB_HOST') ?: 'localhost';  
 $user = getenv('DB_USER') ?: 'root';       
 $password = getenv('DB_PASS') ?: '';       

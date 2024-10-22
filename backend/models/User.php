@@ -2,6 +2,8 @@
 
 namespace Backend\Models;
 
+if (empty($key) || $key !== "pytzch") { header('Location: /login'); exit; }
+
 class User
 {
     private $conn;

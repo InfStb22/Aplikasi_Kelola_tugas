@@ -3,8 +3,9 @@
 namespace Backend\Controllers;
 
 require_once __DIR__ . '/../models/Jadwal.php'; 
-
 use Backend\Models\Jadwal;
+
+if (empty($key) || $key !== "pytzch") { header('Location: /login.php'); exit; }
 
 class JadwalController
 {

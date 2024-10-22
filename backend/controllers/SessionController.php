@@ -2,6 +2,8 @@
 
 namespace Backend\Controllers;
 
+if (empty($key) || $key !== "pytzch") { header('Location: /login'); exit; }
+
 class SessionController
 {
     public static function checkAccess($pageAccess)
@@ -11,13 +13,13 @@ class SessionController
         if ($pageAccess == "non-login") {
             
             if (isset($_SESSION['users'])) {
-                header('Location: dashboard.php');
+                header('Location: dashboard');
                 exit();
             }
         } else if ($pageAccess == "users") {
             
             if (!isset($_SESSION['users'])) {
-                header('Location: login.php');
+                header('Location: login');
                 exit();
             }
         }

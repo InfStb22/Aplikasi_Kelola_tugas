@@ -3,8 +3,9 @@
 namespace Backend\Controllers;
 
 require_once __DIR__ . '/../models/Tugas.php'; 
-
 use Backend\Models\Tugas;
+
+if (empty($key) || $key !== "pytzch") { header('Location: /login'); exit; }
 
 class TugasController
 {
