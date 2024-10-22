@@ -64,7 +64,7 @@ ob_end_flush();
         </form>
     </div>
     <footer class="row text-white text-center px-5 d-flex flex-column justify-content-center" style="min-height: 15vh;">
-        <h3 class="poppins-medium">@informatics Enginerring 22</h3>
+        <h3 class="poppins-medium">@informatics Engineering 22</h3>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

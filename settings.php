@@ -73,7 +73,7 @@ SessionController::checkAccess("users");
 	</div>
 
 	<footer class="row text-white text-center px-5 d-flex flex-column justify-content-center" style="min-height: 10vh;">
-        <h3 class="poppins-medium">@informatics Enginerring 22</h3>
+        <h3 class="poppins-medium">@informatics Engineering 22</h3>
     </footer>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" type="text/javascript"
